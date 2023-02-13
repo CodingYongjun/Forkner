@@ -1,0 +1,7 @@
+@media screen and (min-width:1025px){
+    #main_header{
+        position: fixed;
+        background: #FF9945;
+        transition: none;
+    }
+}

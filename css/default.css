@@ -1,0 +1,21 @@
+@charset "utf-8";
+body,header,nav,section,footer,div,h1,h2,h3,p,caption,table,thead,tbody,tfoot,ul,ol,li,address,
+form,legend,button,fieldset,figure,figcaption{
+    margin: 0px;
+    padding: 0px;
+}
+ul,ol{ list-style: none; }
+a{ text-decoration: none;}
+caption,legend{ display: none; }
+img{
+    border: 0px;
+    display: block;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+fieldset,button{
+    border: 0px;
+}
+address{ font-style: normal;}

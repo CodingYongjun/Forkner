@@ -1,0 +1,193 @@
+#main_header{
+    width: 100%;
+    height: 95px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+}
+#main_header>h1{
+    width: 173px;
+    height: 95px;
+    text-indent: -9999px;
+    position: relative;
+}
+#main_header>h1>a{
+    display: block;
+    width: 100%;
+    height: 70px;
+    background: url("../img/logo.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+#main_header>.gnb{
+    width: 700px;
+    height: 95px;
+    margin: 0px 3% 0px 0px;
+}
+#main_header>.gnb>ul{
+    width: 700px;
+    height: 95px;
+    display: flex;
+    flex-flow: row wrap;
+}
+#main_header>.gnb>ul>li{
+    flex: 1 1 0;
+    text-align: center;
+}
+#main_header>.gnb>ul>li>a{
+    display: block;
+    font-size: 2rem;
+    color: #fff;
+    font-family: 'SF_HambakSnow';
+}
+#main_header>.gnb .sub{
+    background: #fff;
+    display: none;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.5);
+    z-index: 10000;
+}
+#main_header>.gnb .sub li>a{
+    display: block;
+    color: #555;
+    font-size: 1.25rem;
+}
+@media screen and (min-width:1025px){
+    #main_header.on{
+        box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.5);
+        background: #FF9945;
+        transition: all .3s;
+        transition-timing-function: ease-in-out;
+    }
+}
+@media screen and (min-width:1025px){
+    .toggle{ display: block;}
+    #main_header>h1{
+        margin: 0px 0px 0px 3%;
+    }
+    #main_header>.gnb>ul>li{
+        height: 95px;
+        line-height: 95px;
+    }
+    #main_header>.gnb>ul>li>a{
+        height: 95px;
+        font-size: 1.25rem;
+    }
+    #main_header>.gnb .sub>ul{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    #main_header>.gnb .sub li{
+        height: 50px;
+    }
+    #main_header>.gnb .sub li>a{
+        line-height: 50px;
+        height: 50px;
+        font-size: 1rem;
+    }
+    #main_header>.gnb .sub li:hover>a{
+        color: #fff;
+        background: #FF9945;
+    }
+}
+@media screen and (max-width:1024px){
+    #main_header{
+        position: fixed;
+    }
+    #main_header>h1{ display: none;}
+    #main_header>.gnb{
+        width: 100%;
+        height: 160px;
+        margin: 0;
+    }
+    #main_header .toggle{
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        transform: translateY(-50%);
+        background-color: #FF9945;
+        top: 50%;
+        right: 5%;
+        border-radius: 50%;
+        z-index: 100000;
+    }
+    #main_header .toggle .sr_only{
+        width: 0px;
+        height: 0px;
+        line-height: 0px;
+        overflow: hidden;
+        position: absolute;
+        left: -999px;
+        top: -999px;
+        visibility: hidden;
+    }
+    #main_header .toggle>span{
+        display: block;
+        width: 35px;
+        height: 5px;
+        background: #fff;
+        transition: all .4s;
+        opacity: 1;
+        border-radius: 30px;
+        margin: 0px auto;
+    }
+    #main_header .toggle>.bar2{
+        margin: 5px auto;
+    }
+    #main_header .toggle.on>.bar1{
+        transform: translate(0px,9px) rotate(45deg);
+        background: #151515;
+    }
+    #main_header .toggle.on>.bar2{ opacity: 0; }
+    #main_header .toggle.on>.bar3{
+        transform: translate(0px,-10px) rotate(-45deg);
+        background: #151515;
+    }
+    #main_header>.gnb>ul{
+        width: 75%;
+        height: 2000px;
+        background: #fff;
+        flex-direction: column;
+        float: left;
+        position: absolute;
+        right: -1000px;
+        top: 0px;
+        transition: all .5s;
+        transition-timing-function: ease-in-out;
+    }
+    #main_header>.gnb>ul.on{ right: 25%;}
+    #main_header>.gnb>ul>li{
+        width: 100%;
+        flex: none;
+        text-align: left;
+        margin: 8% 0 0 5%;
+    }
+    #main_header>.gnb>ul>li>a{
+        color: #FF9945;
+        font-weight: bold;
+    }
+    #main_header>.gnb .sub{ box-shadow: 0 0 0 0;}
+    #main_header>.gnb .sub li{ margin-top: 5%;}
+    #main_header>.gnb>.m_bg{
+        position: absolute;
+        top: 0px;
+        right: -100%;
+        width: 25%;
+        height: 2000px;
+        background: #FF9945;
+        transition: all .5s;
+        transition-timing-function: ease-in-out;   
+    }
+    #main_header>.gnb>.m_bg.on{ right: 0px; }
+    #main_header>h1{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+    }
+}
