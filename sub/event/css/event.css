@@ -1,0 +1,116 @@
+@charset "utf-8";
+@import "../../../css/default.css";
+@import "../../../css/font.css";
+@import "../../../css/header.css";
+@import "../../../css/sub_header.css";
+@import "../../../css/footer.css";
+
+#content>h2{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3.125rem;
+    color: #FF9945;
+    padding: 5% 0;
+    font-family: 'SF_HambakSnow';
+}
+#content .event_box{
+    width: 960px;
+    height: 1200px;
+    margin: 0 auto;
+
+    margin-bottom: 10%;
+}
+#content .box{
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 0;
+    border-top: 2px #FF9945 solid;
+}
+#content img{ height: 310px;}
+#content .box_txt{ width: 60%;}
+#content h3{
+    width: 240px;
+    font-size: 20px;
+    margin-bottom: 5%;
+    padding: 5% 0;
+    background: #FF9945;
+    border-radius: 20px;
+    color: #fff;
+    text-align: center;
+}
+#content p{
+    margin-bottom: 5%;
+    color: #555;
+    line-height: 30px;
+    font-size: 0.938rem;
+}
+#content .box_txt p:nth-of-type(1){
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #333;
+}
+#content p:nth-of-type(2){
+    background: #FAE8C8;
+    border-radius: 20px;
+    padding: 2% 5%;
+    margin-bottom: 0;
+}
+#content .box:last-child{ border-bottom: 2px #FF9945 solid;}
+@media screen and (min-width:1025px){
+    #content p:nth-of-type(2){
+        background: #FAE8C8;
+        border-radius: 20px;
+        height: 120px;
+    }
+}
+@media screen and (max-width:1024px){
+    #content .event_box{
+        width: 600px;
+        height: 2300px;
+    }
+    #content .box{
+        flex-flow: column wrap;
+    }
+    #content .box_txt{
+        width: 100%;
+        text-align: center;
+    }
+    #content h3{
+        margin: 0 auto;
+        margin-bottom: 5%;
+    }
+    #content p{ line-height: 20px;}
+    #content img{
+        width: 400px;
+        height: 380px;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+    #content p:nth-of-type(2){
+        width: 460px;
+        margin: 0 auto;
+        padding: 30px 0;
+    }
+    .block_t{ display: block;}
+}
+@media screen and (max-width:640px){
+    #content .event_box{
+        width: 80%;
+        height: 1900px;
+    }
+    #content img{
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+    #content p:nth-of-type(2){
+        width: 270px;
+        margin: 0 auto;
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+    .block{ display: block;}
+
+}
