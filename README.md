@@ -41,16 +41,16 @@
     </div>
     <br>
     <ul>
-      <li>  메인 홈페이지는 첫 section 값만 width 값을 100% height 값을 jquery로 window.height 이벤트를 사용하여 높이를 주어 직접 fullpage를 구현 하였습니다.</li>
-      <li>  이미지 eq(0)번째를 fadeOut() 시켜준뒤에 다시 eq(0)번째의 appendTo()이벤트를 사용해 부모요소를 넣어준뒤 이미지 eq(1) 에다가 fadeIn() 을 시켜주어 다음 이미지가 보이게 해준다음 setInterval()이벤트를 사용해 이것을 반볶해 주었습니다.</li>
-      <li>  오른쪽 사진처럼 클릭시 $(this) 의 next()이벤트를 통해 다음 요소에다 slideDown() / slideUp() 이벤트를 사용해 sub 메뉴가 나오고 들어가는 효과를 주었습니다. 이때 addClass/removeClass 를 사용해 class 를 주었다 빼주었다 하여 시각적 효과를 주었습니다.</li>
+      <li>  메인 홈페이지는 첫 section 값만 width 값을 100% height 값을 jquery로 window.height 함수를 사용하여 높이를 주어 직접 fullpage를 구현 하였습니다.</li>
+      <li>  이미지 eq(0)번째를 fadeOut() 시켜준뒤에 다시 eq(0)번째의 appendTo()함수를 사용해 부모요소를 넣어준뒤 이미지 eq(1) 에다가 fadeIn() 을 시켜주어 다음 이미지가 보이게 해준다음 setInterval()함수를 사용해 이것을 반볶해 주었습니다.</li>
+      <li>  오른쪽 사진처럼 클릭시 $(this) 의 next()함수를 통해 다음 요소에다 slideDown() / slideUp() 함수를 사용해 sub 메뉴가 나오고 들어가는 효과를 주었습니다. 이때 addClass/removeClass 를 사용해 class 를 주었다 빼주었다 하여 시각적 효과를 주었습니다.</li>
     </ul>
     <br><br>
     <div align="center">
       <img src="https://user-images.githubusercontent.com/108567709/223972022-9eeb09af-cca9-427f-b1f1-7ab5acf2b53a.jpg">
     </div>
     <ul>
-      <li>  Nav와 맨 아래 2개의 박스에 scrollTop()이벤트로 if문을 걸어주어 조건의 맞을때 등장하게 해주었습니다.</li>
+      <li>  Nav와 맨 아래 2개의 박스에 scrollTop()함수로 if문을 걸어주어 조건의 맞을때 등장하게 해주었습니다.</li>
       <li>  중간 박스는 Swiper 이미지 라이브러리 를 사용하였습니다.</li>
     </ul>
   </li>
